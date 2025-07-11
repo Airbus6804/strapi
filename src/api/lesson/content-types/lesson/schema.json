@@ -32,6 +32,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "lessons"
     }
   }
 }

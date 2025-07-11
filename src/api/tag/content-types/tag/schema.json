@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag",
     "pluralName": "tags",
-    "displayName": "Tag"
+    "displayName": "Tag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,10 +19,10 @@
       "type": "string",
       "required": true
     },
-    "categories": {
+    "lessons": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::category.category",
+      "target": "api::lesson.lesson",
       "inversedBy": "tags"
     }
   }
