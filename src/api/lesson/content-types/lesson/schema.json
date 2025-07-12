@@ -26,18 +26,25 @@
       "inversedBy": "lessons"
     },
     "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "mappedBy": "lessons"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Color": {
+      "type": "string"
     }
   }
 }
