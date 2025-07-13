@@ -41,10 +41,19 @@
       "mappedBy": "lessons"
     },
     "Description": {
-      "type": "text"
+      "type": "text",
+      "required": false
     },
     "Color": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "Meet_URL": {
+      "type": "string",
+      "required": true
+    },
+    "End": {
+      "type": "datetime"
     }
   }
 }
