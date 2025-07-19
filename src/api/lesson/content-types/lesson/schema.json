@@ -54,6 +54,10 @@
     },
     "End": {
       "type": "datetime"
+    },
+    "lesson_id": {
+      "type": "uid",
+      "required": true
     }
   }
 }

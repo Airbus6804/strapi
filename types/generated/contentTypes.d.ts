@@ -419,6 +419,7 @@ export interface ApiLessonLesson extends Struct.CollectionTypeSchema {
     Date: Schema.Attribute.DateTime & Schema.Attribute.Required;
     Description: Schema.Attribute.Text;
     End: Schema.Attribute.DateTime;
+    lesson_id: Schema.Attribute.UID & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
